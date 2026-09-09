@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'BOB', { apiKey: 'art_live_...' });
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-08-20',   // Banco Central de Bolivia's own publication date
+  rate_date: '2026-09-09',   // Banco Central de Bolivia's own publication date
   source: 'USD',
   target: 'BOB',
-  rate: 11.52,
+  rate: 12.64,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-08-20',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "BOB", "type": "reference", "value": 11.52 },
+    { "base": "USD", "quote": "BOB", "type": "reference", "value": 12.64 },
     // … the rest of the published table (23 currencies vs BOB)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'banco-central-de-bolivia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-08-20' },
+  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BOB',
   from: '2026-01-01',
-  to: '2026-08-20',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-20', rate: 11.52, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 12.64, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -235,6 +235,14 @@ getRate('USD', 'BOB', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2016 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/bcbol.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/bcbol/latest.json`
 
 ## 🔗 Links
 
