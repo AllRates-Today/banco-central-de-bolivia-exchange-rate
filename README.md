@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'BOB', { apiKey: 'art_live_...' });
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-09-09',   // Banco Central de Bolivia's own publication date
+  rate_date: '2026-09-26',   // Banco Central de Bolivia's own publication date
   source: 'USD',
   target: 'BOB',
-  rate: 12.64,
+  rate: 12.05,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-26',
   rates: [
-    { "base": "USD", "quote": "BOB", "type": "reference", "value": 12.64 },
+    { "base": "USD", "quote": "BOB", "type": "reference", "value": 12.05 },
     // … the rest of the published table (23 currencies vs BOB)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'banco-central-de-bolivia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-09-26' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BOB',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-26',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 12.64, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-26', rate: 12.05, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
