@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/banco-central-de-bolivia-exchange-rate.svg)](https://github.com/AllRates-Today/banco-central-de-bolivia-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/banco-central-de-bolivia-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/BOB today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbcbol%3Fsource%3DUSD%26target%3DBOB&query=%24.rate&label=USD%2FBOB%20published%20by%20Banco%20Central%20de%20Bolivia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bcbol/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbcbol%3Fsource%3DUSD%26target%3DBOB&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bcbol/)
 
 **Official Banco Central de Bolivia (Bolivia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Banco Central de Bolivia itself prints, every business day.**
 
@@ -32,6 +34,40 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Banco Central de Bolivia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Banco Central de Bolivia — 21 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | BOB | reference | 3.22625 |
+| ARS | BOB | reference | 0.00781 |
+| AUD | BOB | reference | 8.24996 |
+| BRL | BOB | reference | 2.36239 |
+| CAD | BOB | reference | 8.31112 |
+| CHF | BOB | reference | 14.22398 |
+| CLP | BOB | reference | 0.01211 |
+| CNH | BOB | reference | 1.76792 |
+| CNY | BOB | reference | 1.76697 |
+| COP | BOB | reference | 0.00366 |
+| EUR | BOB | reference | 13.27196 |
+| GBP | BOB | reference | 15.65969 |
+| HKD | BOB | reference | 1.51004 |
+| INR | BOB | reference | 0.12245 |
+| MXN | BOB | reference | 0.65907 |
+| NOK | BOB | reference | 1.23752 |
+| PEN | BOB | reference | 3.43827 |
+| PYG | BOB | reference | 0.00206 |
+| SEK | BOB | reference | 1.1848 |
+| USD | BOB | reference | 11.85 |
+| UYU | BOB | reference | 0.29502 |
+
+Source: [Official rates published by BCBOL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bcbol/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
