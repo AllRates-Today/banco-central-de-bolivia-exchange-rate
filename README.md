@@ -40,31 +40,31 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Banco Central de Bolivia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Banco Central de Bolivia — 21 rates. Updated 2026-10-09.
+Published **2026-10-10** by Banco Central de Bolivia — 21 rates. Updated 2026-10-10.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BOB | reference | 3.22625 |
-| ARS | BOB | reference | 0.00781 |
-| AUD | BOB | reference | 8.2476 |
-| BRL | BOB | reference | 2.35915 |
-| CAD | BOB | reference | 8.33275 |
-| CHF | BOB | reference | 14.25478 |
-| CLP | BOB | reference | 0.01211 |
-| CNH | BOB | reference | 1.76771 |
-| CNY | BOB | reference | 1.76779 |
+| AED | BOB | reference | 3.19357 |
+| ARS | BOB | reference | 0.00774 |
+| AUD | BOB | reference | 8.18517 |
+| BRL | BOB | reference | 2.35042 |
+| CAD | BOB | reference | 8.21831 |
+| CHF | BOB | reference | 14.12742 |
+| CLP | BOB | reference | 0.012 |
+| CNH | BOB | reference | 1.75237 |
+| CNY | BOB | reference | 1.75252 |
 | COP | BOB | reference | 0.00368 |
-| EUR | BOB | reference | 13.28863 |
-| GBP | BOB | reference | 15.67755 |
-| HKD | BOB | reference | 1.50994 |
-| INR | BOB | reference | 0.12243 |
-| MXN | BOB | reference | 0.65085 |
-| NOK | BOB | reference | 1.23931 |
-| PEN | BOB | reference | 3.44357 |
-| PYG | BOB | reference | 0.00208 |
-| SEK | BOB | reference | 1.18863 |
-| USD | BOB | reference | 11.85 |
-| UYU | BOB | reference | 0.29485 |
+| EUR | BOB | reference | 13.12815 |
+| GBP | BOB | reference | 15.51752 |
+| HKD | BOB | reference | 1.49463 |
+| INR | BOB | reference | 0.12126 |
+| MXN | BOB | reference | 0.63473 |
+| NOK | BOB | reference | 1.22586 |
+| PEN | BOB | reference | 3.3998 |
+| PYG | BOB | reference | 0.00206 |
+| SEK | BOB | reference | 1.1725 |
+| USD | BOB | reference | 11.73 |
+| UYU | BOB | reference | 0.29197 |
 
 Source: [Official rates published by BCBOL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bcbol/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
