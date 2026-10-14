@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Banco Central de Bolivia — 21 rates. Updated 2026-10-13.
+Published **2026-10-13** by Banco Central de Bolivia — 21 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -123,10 +123,10 @@ const pair = await getRate('USD', 'BOB', { apiKey: 'art_live_...' });
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-10-11',   // Banco Central de Bolivia's own publication date
+  rate_date: '2026-10-13',   // Banco Central de Bolivia's own publication date
   source: 'USD',
   target: 'BOB',
-  rate: 11.73,
+  rate: 11.7,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -151,9 +151,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcbol',
   name: 'Banco Central de Bolivia',
-  rate_date: '2026-10-11',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "USD", "quote": "BOB", "type": "reference", "value": 11.73 },
+    { "base": "USD", "quote": "BOB", "type": "reference", "value": 11.7 },
     // … the rest of the published table (23 currencies vs BOB)
   ],
   disclaimer: '…'
@@ -193,7 +193,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'banco-central-de-bolivia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-10-11' },
+  { source: 'USD', target: 'BOB', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -206,11 +206,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BOB',
   from: '2026-01-01',
-  to: '2026-10-11',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-11', rate: 11.73, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 11.7, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
