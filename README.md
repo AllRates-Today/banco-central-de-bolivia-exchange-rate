@@ -42,31 +42,31 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Banco Central de Bolivia — 21 rates. Updated 2026-10-15.
+Published **2026-10-16** by Banco Central de Bolivia — 21 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BOB | reference | 3.17996 |
+| AED | BOB | reference | 3.18014 |
 | ARS | BOB | reference | 0.00772 |
-| AUD | BOB | reference | 8.13746 |
-| BRL | BOB | reference | 2.32055 |
-| CAD | BOB | reference | 8.19822 |
-| CHF | BOB | reference | 13.99641 |
-| CLP | BOB | reference | 0.01185 |
-| CNH | BOB | reference | 1.74446 |
-| CNY | BOB | reference | 1.74425 |
-| COP | BOB | reference | 0.00367 |
-| EUR | BOB | reference | 13.0267 |
-| GBP | BOB | reference | 15.39658 |
-| HKD | BOB | reference | 1.48818 |
-| INR | BOB | reference | 0.12275 |
-| MXN | BOB | reference | 0.63118 |
-| NOK | BOB | reference | 1.22607 |
-| PEN | BOB | reference | 3.39703 |
-| PYG | BOB | reference | 0.00205 |
-| SEK | BOB | reference | 1.16436 |
+| AUD | BOB | reference | 8.08254 |
+| BRL | BOB | reference | 2.30325 |
+| CAD | BOB | reference | 8.23521 |
+| CHF | BOB | reference | 14.13188 |
+| CLP | BOB | reference | 0.0119 |
+| CNH | BOB | reference | 1.74592 |
+| CNY | BOB | reference | 1.7456 |
+| COP | BOB | reference | 0.00368 |
+| EUR | BOB | reference | 13.10372 |
+| GBP | BOB | reference | 15.50861 |
+| HKD | BOB | reference | 1.48837 |
+| INR | BOB | reference | 0.12288 |
+| MXN | BOB | reference | 0.63542 |
+| NOK | BOB | reference | 1.23351 |
+| PEN | BOB | reference | 3.41281 |
+| PYG | BOB | reference | 0.00204 |
+| SEK | BOB | reference | 1.17409 |
 | USD | BOB | reference | 11.68 |
-| UYU | BOB | reference | 0.29053 |
+| UYU | BOB | reference | 0.29116 |
 
 Source: [Official rates published by BCBOL, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bcbol/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -260,7 +260,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bcbol/latest?format=xml&api_
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bcbol')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bcbol ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
