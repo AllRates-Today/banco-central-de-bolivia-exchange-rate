@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bcbol').t
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,31 +47,31 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Banco Central de Bolivia — 21 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Banco Central de Bolivia — 21 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BOB | reference | 3.18541 |
-| ARS | BOB | reference | 0.00768 |
-| AUD | BOB | reference | 8.16777 |
-| BRL | BOB | reference | 2.31793 |
-| CAD | BOB | reference | 8.29258 |
-| CHF | BOB | reference | 14.14923 |
-| CLP | BOB | reference | 0.01193 |
-| CNH | BOB | reference | 1.75079 |
-| CNY | BOB | reference | 1.75071 |
+| AED | BOB | reference | 3.19357 |
+| ARS | BOB | reference | 0.00769 |
+| AUD | BOB | reference | 8.21452 |
+| BRL | BOB | reference | 2.33996 |
+| CAD | BOB | reference | 8.34222 |
+| CHF | BOB | reference | 14.21646 |
+| CLP | BOB | reference | 0.01203 |
+| CNH | BOB | reference | 1.75733 |
+| CNY | BOB | reference | 1.75691 |
 | COP | BOB | reference | 0.0037 |
-| EUR | BOB | reference | 13.11687 |
-| GBP | BOB | reference | 15.56576 |
-| HKD | BOB | reference | 1.49079 |
-| INR | BOB | reference | 0.12325 |
-| MXN | BOB | reference | 0.63466 |
-| NOK | BOB | reference | 1.24226 |
-| PEN | BOB | reference | 3.40453 |
+| EUR | BOB | reference | 13.17859 |
+| GBP | BOB | reference | 15.69588 |
+| HKD | BOB | reference | 1.49453 |
+| INR | BOB | reference | 0.12357 |
+| MXN | BOB | reference | 0.63707 |
+| NOK | BOB | reference | 1.24737 |
+| PEN | BOB | reference | 3.42112 |
 | PYG | BOB | reference | 0.00204 |
-| SEK | BOB | reference | 1.17928 |
-| USD | BOB | reference | 11.7 |
-| UYU | BOB | reference | 0.2917 |
+| SEK | BOB | reference | 1.18472 |
+| USD | BOB | reference | 11.73 |
+| UYU | BOB | reference | 0.29283 |
 
 </details>
 
