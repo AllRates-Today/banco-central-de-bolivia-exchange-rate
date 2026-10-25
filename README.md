@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-24 by Banco Central de Bolivia — 21 rates. Updated 2026-10-24.</summary>
+<summary>Table as text: published 2026-10-25 by Banco Central de Bolivia — 21 rates. Updated 2026-10-25.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
