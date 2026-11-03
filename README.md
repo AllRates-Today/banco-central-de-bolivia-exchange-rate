@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-02 by Banco Central de Bolivia — 21 rates. Updated 2026-11-03.</summary>
+<summary>Table as text: published 2026-11-03 by Banco Central de Bolivia — 21 rates. Updated 2026-11-03.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
