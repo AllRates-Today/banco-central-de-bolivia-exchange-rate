@@ -32,31 +32,31 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-03 by Banco Central de Bolivia — 21 rates. Updated 2026-11-03.</summary>
+<summary>Table as text: published 2026-11-04 by Banco Central de Bolivia — 21 rates. Updated 2026-11-04.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BOB | reference | 3.29159 |
-| ARS | BOB | reference | 0.00787 |
-| AUD | BOB | reference | 8.49805 |
-| BRL | BOB | reference | 2.21627 |
-| CAD | BOB | reference | 8.65674 |
-| CHF | BOB | reference | 14.66877 |
-| CLP | BOB | reference | 0.01218 |
-| CNH | BOB | reference | 1.81706 |
-| CNY | BOB | reference | 1.81687 |
-| COP | BOB | reference | 0.00378 |
-| EUR | BOB | reference | 13.49843 |
-| GBP | BOB | reference | 16.19102 |
-| HKD | BOB | reference | 1.54133 |
-| INR | BOB | reference | 0.12732 |
-| MXN | BOB | reference | 0.64266 |
-| NOK | BOB | reference | 1.3143 |
-| PEN | BOB | reference | 3.48586 |
-| PYG | BOB | reference | 0.00204 |
-| SEK | BOB | reference | 1.23116 |
-| USD | BOB | reference | 12.09 |
-| UYU | BOB | reference | 0.3009 |
+| AED | BOB | reference | 3.28342 |
+| ARS | BOB | reference | 0.00778 |
+| AUD | BOB | reference | 8.39979 |
+| BRL | BOB | reference | 2.19912 |
+| CAD | BOB | reference | 8.61244 |
+| CHF | BOB | reference | 14.6894 |
+| CLP | BOB | reference | 0.01228 |
+| CNH | BOB | reference | 1.8081 |
+| CNY | BOB | reference | 1.80801 |
+| COP | BOB | reference | 0.00372 |
+| EUR | BOB | reference | 13.49627 |
+| GBP | BOB | reference | 16.17967 |
+| HKD | BOB | reference | 1.53691 |
+| INR | BOB | reference | 0.12729 |
+| MXN | BOB | reference | 0.6403 |
+| NOK | BOB | reference | 1.2996 |
+| PEN | BOB | reference | 3.48404 |
+| PYG | BOB | reference | 0.00198 |
+| SEK | BOB | reference | 1.2315 |
+| USD | BOB | reference | 12.06 |
+| UYU | BOB | reference | 0.29944 |
 
 </details>
 
